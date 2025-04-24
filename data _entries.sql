@@ -110,3 +110,30 @@ VALUES
 (1009, 30, 199.99, 'JACKET-BLACK'),
 (1010, 20, 999.99, 'LAPTOP-SILVER');
 
+--9. Size Option
+INSERT INTO size_option (size_opt_id, size_category_id, size_value, description) 
+VALUES 
+(201, 1, 'S', 'Small'),
+(202, 1, 'M', 'Medium'),
+(203, 1, 'L', 'Large'),
+(204, 2, '10', 'US Shoe Size 10'),
+(205, 2, '12', 'US Shoe Size 12'),
+(206, 4, '55"', 'TV Screen Size'),
+(207, 5, '24x24x36"', 'Chair Dimensions'),
+(208, 7, 'A5', 'Book Size'),
+(209, 9, '30L', 'Backpack Capacity'),
+(210, 10, '18cm', 'Necklace Length');
+
+--10. Product Variation
+INSERT INTO product_variation (variation_id, item_id, color_id, size_opt_id) 
+VALUES 
+(3015, 1001, 1, 201),  -- Red S T-Shirt
+(3020, 1001, 2, 202),  -- Black M T-Shirt
+(3030, 1002, 2, NULL), -- Black Phone (no size)
+(3040, 1003, 4, 204),  -- Blue Size 10 Shoes
+(3050, 1004, 3, NULL), -- White Earbuds
+(3060, 1005, 8, 207),  -- Gray Chair
+(3070, 1006, 2, 206),  -- Black 55" TV
+(3080, 1007, 5, NULL), -- Green LEGO Set
+(3090, 1008, 1, NULL), -- Red Lipstick
+(3100, 1009, 2, NULL); -- White Watch
