@@ -28,6 +28,7 @@ VALUES
 
 
 
+
 -- 3. Product Table
 INSERT INTO product_category (category_id, name, description) 
 VALUES 
@@ -55,3 +56,35 @@ VALUES
 (8, 'Toy Sizes'),
 (9, 'Bag Sizes'),
 (10, 'Jewelry Sizes');
+
+
+--5 COLOR
+INSERT INTO color (color_id, name, hex_values)  
+VALUES  
+(1, 'Red', '#FF0000'),  
+(2, 'Black', '#000000'),  
+(3, 'White', '#FFFFFF'),  
+(4, 'Blue', '#0000FF'),  
+(5, 'Green', '#00FF00'),  
+(6, 'Yellow', '#FFFF00'),  
+(7, 'Pink', '#FFC0CB'),  
+(8, 'Gray', '#808080'),  
+(9, 'Purple', '#800080'),  
+(10, 'Gold', '#FFD700');
+
+
+--6. ATTRIBUTE TYPE
+INSERT INTO attribute_type (att_type_id, name)  
+VALUES  
+(1, 'Material'),  
+(2, 'Warranty'),  
+(3, 'Weight'),  
+(4, 'Battery Life'),  
+(5, 'Resolution'),  
+(6, 'Age Range'),  
+(7, 'Capacity'),  
+(8, 'Waterproof'),  
+(9, 'Genre'),  
+(10, 'Dimensions');
+
+
