@@ -166,4 +166,3 @@ VALUES
 (5009, 1009, 'http://example.com/jacket-black.jpg'),
 (5010, 1010, 'http://example.com/laptop-silver.jpg'); 
 
---

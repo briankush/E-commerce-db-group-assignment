@@ -10,11 +10,10 @@ Collaborate as a team using GitHub for version control and documentation.
 
 ## Repository Structure
 
-/diagrams: Contains the ERD (e.g., ecommerce_erd.png or ecommerce_erd.dbml).
-
-/sql: Contains the SQL script (ecommerce.sql) to create the database schema.
-
-README.md: This file, providing an overview and instructions.
+E-Commerce ERD.PNG and Ecommerce.drawio.pdf : Contains the ERD diagram.
+database.sql : Contains the SQL script to create the database schema.
+data_entries.sql: Contains the SQL script to add data into the database schema.
+readme.md: This file, providing an overview and instructions.
 
 ## Database Schema
 The database consists of the following tables:
@@ -39,51 +38,43 @@ Many-to-One: product_image to product_item, product_variation to product_item.
 Self-Referential: product_category for subcategories.
 
 ## ERD
-The ERD was created using dbdiagram.io (or another tool like Lucidchart or MySQL Workbench). It visualizes entities, attributes, and relationships. Refer to /diagrams/ecommerce_erd.png for the diagram.
-Setup Instructions
+The ERD was created using draw.io. It visualizes entities, attributes, and relationships. Refer to E-Commerce ERD.PNG for the diagram.
 
-Clone the Repository: git clone https://github.com/briankush/E-commerce-db-group-assignment.git
+View ERD:
+
+![E-Commerce ERD](./E-Commerce%20ERD.PNG)
 
 
 ## Database Setup:
-Use a relational database management system (e.g., MySQL, PostgreSQL).
-Run the ecommerce.sql script in /sql to create the database and tables:mysql -u <username> -p <database-name> < sql/ecommerce.sql
+Setup Instructions:
 
-
-
-
-View ERD:
-Open /diagrams/ecommerce_erd.png or import ecommerce_erd.dbml into dbdiagram.io.
-
+Clone the Repository: git clone https://github.com/briankush/E-commerce-db-group-assignment.git
+Use a relational database management system ( MySQL workbench).
+Run the database.sql scripts in to create the database and tables
 
 
 ## Collaboration
 
-Team Communication: Regular meetings via [preferred platform, e.g., Discord, Zoom].
+Team Communication: Regular meetings via Google meet.
 Version Control: Use GitHub for tracking changes. Commit ERD updates, SQL scripts, and documentation.
 Task Management: Assign roles (e.g., ERD designer, SQL developer, documentation lead) and track progress.
 
 ## Tools Used
 
-ERD Design: dbdiagram.io, Lucidchart, or MySQL Workbench.
-Database: MySQL (or another RDBMS).
+ERD Design: draw.io
+Database: MySQL
 Version Control: GitHub.
-Collaboration: [e.g., Discord, Google Docs].
-
-## Submission
-
-The repository is public on GitHub for review.
-Key deliverables:
-ERD in /diagrams.
-SQL schema in /sql/ecommerce.sql.
-This README for documentation.
-
 
 
 ## Contributors
+- Vanessa Williams (https://github.com/nessa360)
+- Brian Kuria Mwangi (https://github.com/briankush)
+- Juanita Achieng (https://github.com/Juana-tech)
+- Victor (https://github.com/Vannexs)
+- Moses Kimani (https://github.com/mose868)
+- Mosa Mabina (https://github.com/MosaMabina)
+- Vicky Blessings (https://github.com/Vicky-Blessing)
 
-[List team members and their roles, e.g., "John Doe - ERD Designer"]
-[Add more as needed]
 
 ## License
 This project is for educational purposes and is not licensed for commercial use.
