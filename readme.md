@@ -1,8 +1,8 @@
 # E-commerce Database Design Project
 ## Overview
 This project involves designing and implementing a relational database for an e-commerce platform. The database supports key functionalities such as product management, categorization, variations (e.g., size, color), and custom attributes. The project includes an Entity-Relationship Diagram (ERD) and SQL scripts to create the database schema.
-Objectives
 
+Objectives:
 Design an Entity-Relationship Diagram (ERD) to model the e-commerce database.
 Define entities, attributes, relationships, primary keys, foreign keys, and constraints.
 Implement the database schema using SQL.
@@ -11,8 +11,11 @@ Collaborate as a team using GitHub for version control and documentation.
 ## Repository Structure
 
 E-Commerce ERD.PNG and Ecommerce.drawio.pdf : Contains the ERD diagram.
+
 database.sql : Contains the SQL script to create the database schema.
+
 data_entries.sql: Contains the SQL script to add data into the database schema.
+
 readme.md: This file, providing an overview and instructions.
 
 ## Database Schema
@@ -34,7 +37,9 @@ The database consists of the following tables:
 ## Relationships
 
 One-to-Many: product to product_item, brand to product, size_category to size_option.
+
 Many-to-One: product_image to product_item, product_variation to product_item.
+
 Self-Referential: product_category for subcategories.
 
 ## ERD
@@ -49,20 +54,26 @@ View ERD:
 Setup Instructions:
 
 Clone the Repository: git clone https://github.com/briankush/E-commerce-db-group-assignment.git
+
 Use a relational database management system ( MySQL workbench).
+
 Run the database.sql scripts in to create the database and tables
 
 
 ## Collaboration
 
 Team Communication: Regular meetings via Google meet.
+
 Version Control: Use GitHub for tracking changes. Commit ERD updates, SQL scripts, and documentation.
+
 Task Management: Assign roles (e.g., ERD designer, SQL developer, documentation lead) and track progress.
 
 ## Tools Used
 
 ERD Design: draw.io
+
 Database: MySQL
+
 Version Control: GitHub.
 
 
