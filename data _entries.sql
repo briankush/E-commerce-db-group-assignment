@@ -10,7 +10,7 @@ VALUES
 (7, 'Books', 'Fiction and non-fiction'),
 (8, 'Toys', 'Children’s toys'),
 (9, 'Beauty', 'Skincare and makeup'),
-(10, 'Furniture', 'Chairs, tables, etc.');
+(10, 'Furniture', 'Chairs,tables, etc.');
 
 -- 2. Brand Table
 INSERT INTO brand (brand_id, name, description, created_at)  
@@ -137,3 +137,33 @@ VALUES
 (3080, 1007, 5, NULL), -- Green LEGO Set
 (3090, 1008, 1, NULL), -- Red Lipstick
 (3100, 1009, 2, NULL); -- White Watch
+
+--11. Product Attribute
+INSERT INTO product_attribute (attribute_id, product_id, att_type_id, att_cat_id, value)
+VALUES
+(401, 101, 1, 1, 'Fabric', '100% Cotton'),
+(402, 102, 2, 2, 'Warranty', '2 Years'),
+(403, 103, 3, 3, 'Weight', '500g'),
+(404, 104, 2, 4, 'Battery Life', '8 Hours'),
+(405, 106, 2, 5, 'Resolution', '3840x2160'),
+(406, 107, 5, 6, 'Age Range', '6+'),
+(407, 105, 4, 10, 'Dimensions', '24x24x36"'),
+(408, 108, 6, 8, 'Waterproof', 'No'),
+(409, 109, 1, 1, 'Material', 'Nylon'),
+(410, 110, 2, 2, 'Warranty', '3 Years'); 
+
+--12. Product Image
+INSERT INTO product_image (product_image_id, item_id, image_url) 
+VALUES 
+(5001, 1001, 'http://example.com/tshirt-red.jpg'),
+(5002, 1002, 'http://example.com/phone-black.jpg'),
+(5003, 1003, 'http://example.com/shoes-blue.jpg'),
+(5004, 1004, 'http://example.com/earbuds-white.jpg'),
+(5005, 1005, 'http://example.com/chair-gray.jpg'),
+(5006, 1006, 'http://example.com/tv-black.jpg'),
+(5007, 1007, 'http://example.com/lego-green.jpg'),
+(5008, 1008, 'http://example.com/lipstick-red.jpg'),
+(5009, 1009, 'http://example.com/jacket-black.jpg'),
+(5010, 1010, 'http://example.com/laptop-silver.jpg'); 
+
+--
